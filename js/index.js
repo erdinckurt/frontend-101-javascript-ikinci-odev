@@ -89,3 +89,12 @@ function dltStorage(text) {
     })
     localStorage.setItem("todo", JSON.stringify(toDo))
 }
+
+(function () {
+    // Deleting to-do processes
+    var close = document.getElementsByClassName("close")
+    var i;
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = (e) => deleteByElement(e);
+    }
+})();
