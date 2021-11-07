@@ -63,7 +63,7 @@ function getStorage() {
     return toDo;
 }
 
-// Get Items From Local Storage
+// Get items From Local Storage
 function loadItems() {
     let toDo = getStorage();
     console.log(toDo);
@@ -79,8 +79,7 @@ function loadItems() {
     }
 }
 
-
-// Delete Items From Local Storage
+// Delete items from Local Storage
 function dltStorage(text) {
     let toDo = getStorage()
     toDo.forEach((element, id) => {
